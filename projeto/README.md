@@ -8,32 +8,20 @@
 - Get [docker](https://docker.com)
 - Get [docker-compose](https://github.com/docker/compose)
 ```
-### Running
-Only for the first time
-```
-> docker-compose run -d --rm catho npm install
-```
-
-To start the project run
-```
-> docker-compose up -d
-```
-
-To restart after a change in source code for example, run
-```
-> docker-compose restart
-```
-
-To run unit tests
-```
-> docker-compose run --rm catho bash
-> npm test
-```
 
 
+no Linux/Mac
+
+apagar os arquivos:
+  docker-compose.yml
+  package.json
+
+remover as extenções dos arquivos
+  docker-compose.yml.linuxMac
+  package.json.linuxMac
 
 
-no Windows
+no Windows - Virtual box
 ...
 
 conect to docker-machine
@@ -53,6 +41,31 @@ Onde Projetos é a Pasta do virtual box
 ...
 para fechar e gravar o arquivo
   :x
+
+
+
+### Running
+Executa rapenas na primeira vez
+```
+> docker-compose run -d --rm catho npm install
+```
+
+Para rodar o projeto
+```
+> docker-compose up -d
+```
+
+Para atualizar apos alguma alteração
+```
+> docker-compose restart
+```
+
+Para rodar os Testes unitários
+```
+> docker-compose run --rm catho bash
+> npm test
+```
+
 
 ## Deploying
 
